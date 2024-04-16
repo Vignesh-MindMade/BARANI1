@@ -17,13 +17,15 @@ class NewsandeventsController extends Controller
     public function store(Request $request)
 {
     $validatedData = $request->validate([
-        'title' => 'required|string|max:255',
+        'event_date' => '',
+        'description' => '',
         'image' => 'image|mimes:jpeg,webp|max:2048',
         'sort_id' => 'nullable|string|max:255',
     ]);
 
     $events = new NewsandEvents;
-    $events->title = $validatedData['title'];
+    $events->event_date = $validatedData['event_date'];
+    $events->description = $validatedData['description'];
 
     if ($request->hasFile('image')) {
         $image = $request->file('image');

@@ -23,9 +23,32 @@
                                 <input class="form-control" type="file" id="image" name="image" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
                                 <img id="previewImage" src="#" alt="Uploaded Image" style="max-width: 100px; display: none;">
                             </div>
+                             <div class="mb-3">
+                            <label for="description" class="form-label">Description</label>
+                            <input class="form-control" type="text" id="description" name="description" placeholder="Description" aria-label="Description">
+                            </div>
                             <div class="mb-3">
-                                <label for="title" class="form-label">Title</label>
-                                <input class="form-control" type="text" id="title" name="title" placeholder="Title" aria-label="Title" required>
+                                <label class="form-label">Date:</label>
+                                <input type="date" class="form-control" id="event_date" name="event_date">
+                            </div>
+                            <hr/>
+                            <div class="mb-3">
+                                <label for="image1" class="form-label">Image1 </label>
+                                <input class="form-control" type="file" id="image1" name="image1" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
+                                <img id="previewImage" src="#" alt="Uploaded Image" style="max-width: 100px; display: none;">
+                            </div>
+                             <div class="mb-3">
+                            <label for="content1" class="form-label">Content1</label>
+                            <input class="form-control" type="text" id="content1" name="content1" placeholder="Description" aria-label="Description">
+                            </div>
+                            <div class="mb-3">
+                                <label for="image1" class="form-label">Image2 </label>
+                                <input class="form-control" type="file" id="image2" name="image2" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
+                                <img id="previewImage" src="#" alt="Uploaded Image" style="max-width: 100px; display: none;">
+                            </div>
+                             <div class="mb-3">
+                            <label for="content1" class="form-label">Content1</label>
+                            <input class="form-control" type="text" id="content1" name="content1" placeholder="Description" aria-label="Description">
                             </div>
                             <div class="mb-3">
                                 <label for="sort_id" class="form-label">Sort ID</label>
@@ -53,7 +76,6 @@
                                 <thead>
                                     <tr>
                                         <th>S.no</th>
-                                        <th>Menu</th>
                                         <th>Image</th>
                                     </tr>
                                 </thead>
@@ -61,7 +83,6 @@
                                     @foreach($newsandevents as $key=> $event)
                                     <tr>
                                         <td>{{ $key+1 }}</td>
-                                        <td>{{ $event->title }}</td>
                                         <td><img src="{{ asset('images/' . $event->image) }}" alt="{{ $event->name }}" style="max-width: 100px;"></td>
                                     </tr>
                                     @endforeach

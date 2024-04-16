@@ -10,11 +10,6 @@ class NewsandEvents extends Model
     use HasFactory;
 
     protected $table = 'events';
-    protected $fillable = ['title', 'image', 'sort_id'];
-
-
-
-
-
+    protected $fillable = ['image','event_date','description', 'sort_id'];
 
 }
