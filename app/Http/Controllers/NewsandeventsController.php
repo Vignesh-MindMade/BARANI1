@@ -24,6 +24,7 @@ class NewsandeventsController extends Controller
     ]);
 
     $events = new NewsandEvents;
+
     $events->event_date = $validatedData['event_date'];
     $events->description = $validatedData['description'];
 

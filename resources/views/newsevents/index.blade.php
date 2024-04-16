@@ -41,6 +41,7 @@
                             <label for="content1" class="form-label">Content1</label>
                             <input class="form-control" type="text" id="content1" name="content1" placeholder="Description" aria-label="Description">
                             </div>
+                            <hr/>
                             <div class="mb-3">
                                 <label for="image1" class="form-label">Image2 </label>
                                 <input class="form-control" type="file" id="image2" name="image2" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
@@ -49,6 +50,26 @@
                              <div class="mb-3">
                             <label for="content1" class="form-label">Content1</label>
                             <input class="form-control" type="text" id="content1" name="content1" placeholder="Description" aria-label="Description">
+                            </div>
+                            <hr/>
+                            <div class="mb-3">
+                                <label for="image3" class="form-label">Image3 </label>
+                                <input class="form-control" type="file" id="image3" name="image3" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
+                                <img id="previewImage" src="#" alt="Uploaded Image" style="max-width: 100px; display: none;">
+                            </div>
+                             <div class="mb-3">
+                            <label for="content3" class="form-label">Content3</label>
+                            <input class="form-control" type="text" id="content3" name="content3" placeholder="Description" aria-label="Description">
+                            </div>
+                            <hr/>
+                            <div class="mb-3"> 
+                                <label for="image4" class="form-label">Image4 </label>
+                                <input class="form-control" type="file" id="image4" name="image4" placeholder="Image" aria-label="Image" onchange="displayImage(event)" required>
+                                <img id="previewImage" src="#" alt="Uploaded Image" style="max-width: 100px; display: none;">
+                            </div>
+                             <div class="mb-3">
+                            <label for="content3" class="form-label">Content4</label>
+                            <input class="form-control" type="text" id="content4" name="content4" placeholder="Description" aria-label="Description">
                             </div>
                             <div class="mb-3">
                                 <label for="sort_id" class="form-label">Sort ID</label>
