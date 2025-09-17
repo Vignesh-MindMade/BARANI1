@@ -1,0 +1,34 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .event-cards {
+        display: block !important;
+        width: auto !important;
+    }
+    .event-container {
+        margin-top: 0 !important;
+    }
+    .upcoming-event {
+        padding-bottom: 60px;
+    }
+    .event-content {
+        padding: 20px 50px;
+    }
+    .event-card {
+        padding: unset !important; 
+    }
+    .facilities .swiper {
+        overflow: unset !important;
+        padding: 0 15px !important;
+    }
+    .logo img {
+        width: 100%;
+    }
+    .gallery p {
+        width: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next {
+        left: var(--swiper-navigation-sides-offset, 10px) !important;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        right: var(--swiper-navigation-sides-offset, 10px) !important;
+    }
+}
