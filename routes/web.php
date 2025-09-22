@@ -10,7 +10,7 @@ use App\Http\Controllers\backend\FoodController;
 use App\Http\Controllers\backend\OEMController;
 use Illuminate\Support\Facades\Artisan;
 
-
+// shndksdksk
 // Frontend routes:
 Route::get('/', [FrontHomePageController::class, 'index'])->name('homepage');
 Route::get('/profile', [FrontHomePageController::class, 'profile'])->name('profiles');
