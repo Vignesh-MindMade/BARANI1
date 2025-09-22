@@ -1,161 +1,152 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="zxx">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--favicon-->
-	<link rel="icon" href="assets/images/1712398385_logo.png" type="image/png" />
-	<!--plugins-->
-	@yield("style")
-	<link href="assets/plugins/simplebar/css/simplebar.css" rel="stylesheet" />
-	<link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
-	<link href="assets/plugins/metismenu/css/metisMenu.min.css" rel="stylesheet" />
-	<!-- loader-->
-	<link href="assets/css/pace.min.css" rel="stylesheet" />
-	<script src="assets/js/pace.min.js"></script>
-	<!-- Bootstrap CSS -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-	<link href="assets/css/app.css" rel="stylesheet">
-	<link href="assets/css/icons.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <meta name="author" content="WRAPCODERS">
+    <title>Barani || Dashboard</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/backend/images/custome/logo-light.png')}}">
+    <link rel="icon" type="image/x-icon" href="assets/backend/images/custome/logo-light.png">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/css/vendors.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/vendors/css/daterangepicker.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/backend/css/theme.min.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('assets/backend/css/dashboard.css')}}">
+    <style>
+        * {
+            font-family: 'Work Sans', sans-serif;
+        }
+        .nxl-horizontal-nav {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 0 20px;
+            height: 85px;
+            display: flex;
+            align-items: center;
 
-    <!-- Theme Style CSS -->
-    <link rel="stylesheet" href="assets/css/dark-theme.css" />
-    <link rel="stylesheet" href="assets/css/semi-dark.css" />
-    <link rel="stylesheet" href="assets/css/header-colors.css" />
-    <title>PSG</title>
+        }
+        .nxl-horizontal-nav .navbar-wrapper {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .nxl-horizontal-nav .b-brand {
+            margin-right: 30px;
+        }
+        .nxl-horizontal-nav .b-brand img {
+            height: 40px;
+        }
+        .nxl-horizontal-nav .nxl-navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nxl-horizontal-nav .nxl-item {
+            position: relative;
+        }
+        .nxl-horizontal-nav .nxl-link {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .nxl-horizontal-nav .nxl-link:hover {
+            color: #007bff;
+        }
+        .nxl-horizontal-nav .nxl-hasmenu .nxl-submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            list-style: none;
+            padding: 10px 0;
+            min-width: 200px;
+            z-index: 1000;
+        }
+        .nxl-horizontal-nav .nxl-hasmenu:hover .nxl-submenu {
+            display: block;
+        }
+        .nxl-horizontal-nav .nxl-submenu .nxl-item .nxl-link {
+            padding: 8px 20px;
+            font-size: 13px;
+        }
+        .nxl-horizontal-nav .nxl-micon {
+            font-size: 16px;
+        }
+        .nxl-horizontal-nav .nxl-caption {
+            display: none;
+        }
+        .nxl-content {
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .nxl-horizontal-nav .nxl-navbar {
+                display: none;
+            }
+            .nxl-horizontal-nav .nxl-mobile-toggle {
+                display: block;
+                cursor: pointer;
+                font-size: 24px;
+                margin-left: auto;
+            }
+            .nxl-horizontal-nav.active .nxl-navbar {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                padding: 10px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-	<!--wrapper-->
-	<div class="wrapper">
-		<!--start header -->
-		@include("layouts.header")
-		<!--end header -->
-		<!--navigation-->
-		@include("layouts.nav")
-		<!--end navigation-->
-		<!--start page wrapper -->
-		@yield("wrapper")
-		<!--end page wrapper -->
-		<!--start overlay-->
-		<div class="overlay toggle-icon"></div>
-		<!--end overlay-->
-		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
-		<!--End Back To Top Button-->
-		<footer class="page-footer">
-			<p class="mb-0">Copyright © 2021. All right reserved.</p>
-		</footer>
-	</div>
-	<!--end wrapper-->
-    <!--start switcher-->
-    <div class="switcher-wrapper">
-        <div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
-        </div>
-        <div class="switcher-body">
-            <div class="d-flex align-items-center">
-                <h5 class="mb-0 text-uppercase">Theme Customizer</h5>
-                <button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
-            </div>
-            <hr/>
-            <h6 class="mb-0">Theme Styles</h6>
-            <hr/>
-            <div class="d-flex align-items-center justify-content-between">
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="lightmode" checked>
-                    <label class="form-check-label" for="lightmode">Light</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="darkmode">
-                    <label class="form-check-label" for="darkmode">Dark</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="semidark">
-                    <label class="form-check-label" for="semidark">Semi Dark</label>
-                </div>
-            </div>
-            <hr/>
-            <div class="form-check">
-                <input class="form-check-input" type="radio" id="minimaltheme" name="flexRadioDefault">
-                <label class="form-check-label" for="minimaltheme">Minimal Theme</label>
-            </div>
-            <hr/>
-            <h6 class="mb-0">Header Colors</h6>
-            <hr/>
-            <div class="header-colors-indigators">
-                <div class="row row-cols-auto g-3">
-                    <div class="col">
-                        <div class="indigator headercolor1" id="headercolor1"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor2" id="headercolor2"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor3" id="headercolor3"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor4" id="headercolor4"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor5" id="headercolor5"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor6" id="headercolor6"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor7" id="headercolor7"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator headercolor8" id="headercolor8"></div>
-                    </div>
-                </div>
-            </div>
-            <hr/>
-            <h6 class="mb-0">Sidebar Colors</h6>
-            <hr/>
-            <div class="header-colors-indigators">
-                <div class="row row-cols-auto g-3">
-                    <div class="col">
-                        <div class="indigator sidebarcolor1" id="sidebarcolor1"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor2" id="sidebarcolor2"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor3" id="sidebarcolor3"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor4" id="sidebarcolor4"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor5" id="sidebarcolor5"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor6" id="sidebarcolor6"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor7" id="sidebarcolor7"></div>
-                    </div>
-                    <div class="col">
-                        <div class="indigator sidebarcolor8" id="sidebarcolor8"></div>
-                    </div>
+    @include('layouts.sidebar')
+    <main class="nxl-container">
+        <div class="nxl-content">
+            <div class="main-content">
+                <div class="row">
+                    @yield('content')
                 </div>
             </div>
         </div>
-    </div>
-    <!--end switcher-->
-	<!-- Bootstrap JS -->
-	<script src="assets/js/bootstrap.bundle.min.js"></script>
-	<!--plugins-->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/plugins/simplebar/js/simplebar.min.js"></script>
-	<script src="assets/plugins/metismenu/js/metisMenu.min.js"></script>
-	<script src="assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
-	<!--app JS-->
-	<script src="assets/js/app.js"></script>
-	@yield("script")
-    @include("layouts.theme-control")
+    </main>
+    <script src="{{ asset('assets/backend/vendors/js/vendors.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/vendors/js/daterangepicker.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/vendors/js/apexcharts.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/vendors/js/circle-progress.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/js/common-init.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/js/dashboard-init.min.js')}}"></script>
+    <script src="{{ asset('assets/backend/js/theme-customizer-init.min.js')}}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileToggle = document.querySelector('.nxl-mobile-toggle');
+            const nav = document.querySelector('.nxl-horizontal-nav');
+            mobileToggle.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
-
 </html>

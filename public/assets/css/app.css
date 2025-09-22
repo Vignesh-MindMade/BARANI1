@@ -30,7 +30,7 @@ File: app.css
 
 
 body {
-font-size: 14px;
+font-size: 13px;
 color: #4c5258;
 letter-spacing: .5px;
 overflow-x:hidden;
@@ -58,21 +58,23 @@ a {
 	transition: all .2s ease-out
 }
 .sidebar-header {
-	width: 250px;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	padding: 0 15px;
-	z-index: 5;
-	background: #fff;
-	background-clip: padding-box;
-	border-bottom: 1px solid #e4e4e4
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 0 15px;
+    z-index: 5;
+    background: #ffffff;
+    background-clip: padding-box;
+    border-bottom: 1px solid #e4e4e4;
 }
 .logo-icon {
-	width: 30px
+	width: 224px;
+	height: 146%;
+	margin: 4px -17px;
 }
 .logo-text {
 	font-size: 22px;
@@ -81,6 +83,7 @@ a {
 	letter-spacing: 1px;
 	color: #0d6efd
 }
+
 .toggle-icon {
 	font-size: 22px;
 	cursor: pointer;
@@ -91,7 +94,7 @@ a {
 	top: 0;
 	left: 250px;
 	right: 0;
-	height: 60px;
+	height: 80px;
 	background: #fff;
 	border-bottom: 1px solid rgb(228 228 228 / 0%);
 	z-index: 10;
@@ -105,12 +108,12 @@ a {
 }
 .page-wrapper {
 	height: 100%;
-	margin-top: 60px;
-	margin-bottom: 30px;
+	margin-top: 80px;
+	margin-bottom: 50px;
 	margin-left: 250px
 }
 .page-content {
-	padding: 1.5rem
+    padding: 2.5rem 5.5rem 1.5rem 3rem;
 }
 .page-footer {
 	background: #fff;
@@ -144,22 +147,22 @@ a {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 10px;
-	margin-top: 60px;
+	padding: 0px;
+	margin-top: 80px;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column
 }
-.sidebar-wrapper .metismenu li+li {
-	margin-top: 5px
-}
-.sidebar-wrapper .metismenu li:first-child {
-	margin-top: 5px
-}
-.sidebar-wrapper .metismenu li:last-child {
-	margin-bottom: 5px
-}
+/*.sidebar-wrapper .metismenu li+li {*/
+/*	margin-top: 5px*/
+/*}*/
+/*.sidebar-wrapper .metismenu li:first-child {*/
+/*	margin-top: 5px*/
+/*}*/
+/*.sidebar-wrapper .metismenu li:last-child {*/
+/*	margin-bottom: 5px*/
+/*}*/
 .sidebar-wrapper .metismenu>li {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -171,19 +174,19 @@ a {
 	position: relative
 }
 .sidebar-wrapper .metismenu a {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	padding: 8px 15px;
-	font-size: 15px;
-	color: #5f5f5f;
-	outline-width: 0;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	letter-spacing: .5px;
-	border: 1px solid #ffffff00;
-	transition: all .3s ease-out
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 13px;
+    color: #ffffff;
+    outline-width: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    letter-spacing: .5px;
+    border: 1px solid #ffffff00;
+    transition: all .3s ease-out;
 }
 .sidebar-wrapper .metismenu a .parent-icon {
 	font-size: 24px;
@@ -193,7 +196,6 @@ a {
 	margin-left: 10px
 }
 .sidebar-wrapper .metismenu ul a {
-	padding: 6px 15px 6px 15px;
 	font-size: 15px;
 	border: 0
 }
@@ -201,8 +203,8 @@ a {
 	margin-right: 10px
 }
 .sidebar-wrapper .metismenu ul {
-	border: 1px solid #ededed;
-	background: #fff
+    background: #162250;
+    border-radius: 0px 0px 10px 10px;
 }
 .sidebar-wrapper .metismenu ul ul a {
 	padding: 8px 15px 8px 30px
@@ -211,9 +213,9 @@ a {
 	padding: 8px 15px 8px 45px
 }
 .sidebar-wrapper .metismenu .mm-active>a, .sidebar-wrapper .metismenu a:active, .sidebar-wrapper .metismenu a:focus, .sidebar-wrapper .metismenu a:hover {
-	color: #0d6efd;
+	color: #ffff;
 	text-decoration: none;
-	background: rgb(13 110 253 / .12)
+	background: #141745;
 }
 .menu-label {
 	padding: 20px 15px 5px 5px;
@@ -1428,9 +1430,9 @@ input::placeholder {
 	background: #f62718
 }
 .user-img {
-	width: 42px;
-	height: 42px;
-	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	border-radius: 11%;
 	border: 0 solid #e5e5e5;
 	padding: 0
 }
@@ -1895,4 +1897,109 @@ input::placeholder {
     margin: 4px;
     display: inline-block;
 }
+
+/*.sidebar-wrapper .metismenu ul {*/
+/*    margin-top:15px !important;*/
+/*}*/
+
+.page-wrapper h6 {
+    font-size:14px;
+    font-weight:600;
+    color:#3a4197;
+}
+
+
+.d-c-c-r {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+}
+
+
+.menu-arrow {
+    transform: rotate(-90deg);
+    transition:0.4s ease-in-out;
+}
+
+.active .menu-arrow {
+    transform: rotate(0deg);
+    transition:0.4s ease-in-out;
+}
+
+.fa-angle-double-down {
+    color:#ffffff;
+    font-size:18px;
+}
+
+.ml-1r {
+    margin-left:1rem;
+}
+
+.mt-20 {
+    margin-top:20px;
+}
+
+.primary-menu ul li a{
+    padding:15px 20px;
+}
+.primary-menu ul li a:hover{
+    padding:15px 20px;
+    background:#ffffff !important;
+    transition:0.4s ease-in-out;
+}
+
+.primary-menu ul li a:hover {
+    padding: 15px 20px;
+    background: #ffffff !important;
+    transition: 0.4s ease-in-out;
+    color:#162250 !important;
+}
+
+.bi-dot::before {
+    font-size:20px;
+}
+
+.d-c-c-r .menu-title {
+    font-size:12px;
+}
+.d-c-c-r i {
+    font-size:18px;
+    margin-bottom:2px;
+}
+
+.sidebar-wrapper .metismenu ul a i {
+    color:#162250;
+}
+
+
+.sidebar-wrapper .metismenu li ul li a.active {
+    color: #162250;
+    text-decoration: none;
+    background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

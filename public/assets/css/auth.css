@@ -1,0 +1,237 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.login {
+    background-image: url(./asserts/images/backgroun-image.jpg);
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Work Sans", sans-serif;
+    align-items: center;
+    position: relative;
+}
+
+.login-div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.top-image>img {
+    object-fit: cover;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.inputs {
+    background-color: white;
+    display: flex;
+    text-align: start;
+    width: 400px;
+    flex-direction: column;
+    border-radius: 0px 0px 20px 20px;
+}
+.form-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    margin: 0px !important;
+    padding: 5px 0px;
+}
+
+.form {
+    margin-left: 20px;
+}
+
+.form-field {
+    position: relative;
+    padding: 10px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+input::placeholder {
+    /* padding-left: 25px; */
+}
+
+.input-box {
+    background-color: rgb(252, 92, 116);
+    width: 90%;
+    padding: 5px;
+    padding-left: 35px;
+    border-radius: 0%;
+    outline: none;
+    border: 0.5px solid rgb(204, 204, 204);
+    background-color: transparent;
+    outline: none;
+    position: relative;
+}
+
+.form-field>i {
+    position: absolute;
+    top: 22px;
+    left: 20px;
+}
+
+.forget-field {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    width: 100%;
+    margin: 0px 0px 0px -20px;
+}
+
+.login-btn {
+    width: 90%;
+}
+
+.login-btn>button {
+    background-color: #f58634;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+.login-btn>button:hover {
+    background-color: #f56d0b;
+}
+
+.account-link {
+    text-align: center;
+    width: 90%;
+    padding-bottom: 15px;
+
+}
+
+.account-link>a {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+    .login {
+       background-image: url(./asserts/images/backgroun-image.jpg);
+        background-position: cover;
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Work Sans", sans-serif;
+        align-items: center;
+        position: relative;
+    }
+
+    .login-div {
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+        border-radius: 20px 20px 20px 20px;
+
+    }
+
+
+    .top-image>img {
+        object-fit: contain;
+        width: 300px;
+        border-radius: 20px 20px 0 0;
+
+    }
+
+    .inputs {
+        background-color: white;
+        display: flex;
+        text-align: start;
+        width: 300px;
+        flex-direction: column;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+    .form {
+        margin-left: 20px;
+    }
+
+    .form-field {
+        position: relative;
+        padding: 10px;
+        /* background-color: red; */
+        width: 100%;
+    }
+
+    input::placeholder {
+        padding-left: 25px;
+    }
+
+    .input-box {
+        background-color: rgb(252, 92, 116);
+        width: 90%;
+        padding: 5px;
+        border-radius: 0%;
+        outline: none;
+        border: 0.5px solid rgb(204, 204, 204);
+        background-color: transparent;
+        outline: none;
+        position: relative;
+    }
+
+    .form-field>i {
+        position: absolute;
+        top: 22px;
+        left: 20px;
+    }
+
+    .forget-field {
+        display: flex;
+        justify-content: space-around;
+        /* background-color: red; */
+        padding: 5px;
+        width: 100%;
+        margin: 0px 0px 0px -20px;
+    }
+
+    .login-login-btn {
+        width: 90%;
+    }
+
+    .login-login-btn>button {
+        background-color: rgb(158, 96, 158);
+        width: 100%;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        text-transform: uppercase;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .top-image>img {
+        object-fit: contain;
+        width: 370px;
+        border-radius: 20px 20px 0 0;
+
+    }
+
+    .inputs {
+        background-color: white;
+        display: flex;
+        text-align: start;
+        width: 370px;
+        flex-direction: column;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+}
