@@ -1,0 +1,42 @@
+/* Hide submenus by default */
+.metismenu ul {
+    display: none;
+}
+
+/* Sidebar background color and content color */
+.sidebar-wrapper {
+    background-color: #343a40;
+    /* Set your desired background color */
+    color: white;
+    /* Set content color to white */
+}
+
+.sidebar-wrapper a {
+    color: white;
+    /* Set links color to white */
+}
+
+.sidebar-wrapper .menu-title {
+    color: white;
+    /* Set menu titles color to white */
+}
+
+.sidebar-wrapper .parent-icon i {
+    color: white;
+    /* Set icons color to white */
+}
+
+/* Arrow styling */
+.menu-arrow {
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.active .menu-arrow {
+    transform: rotate(180deg);
+    /* Rotate arrow when active */
+}
+
+.sidebar-wrapper .metismenu a .menu-title  {
+    font-size: 13px !important;
+}

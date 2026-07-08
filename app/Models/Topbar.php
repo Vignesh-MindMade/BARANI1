@@ -10,6 +10,14 @@ class Topbar extends Model
     use HasFactory;
 
     protected $table = 'topbars';
-    protected $fillable = ['title', 'link_text','link','sort_id'];
+    protected $fillable = [
+        'updated_on',
+        'title',
+        'catagory',
+        'description',
+        'pdf',
+        'minimum_age_rules_points',
+        'sort_id'
+    ];
 
 }

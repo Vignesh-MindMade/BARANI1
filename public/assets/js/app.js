@@ -1,11 +1,11 @@
 $(function() {
 	"use strict";
-	new PerfectScrollbar(".header-message-list"), new PerfectScrollbar(".header-notifications-list"), $(".mobile-search-icon").on("click", function() {
+	if(document.querySelector(".header-message-list")){new PerfectScrollbar(".header-message-list");} if(document.querySelector(".header-notifications-list")){new PerfectScrollbar(".header-notifications-list");} $(".mobile-search-icon").on("click", function() {
 		$(".search-bar").addClass("full-search-bar")
 	}), $(".search-close").on("click", function() {
 		$(".search-bar").removeClass("full-search-bar")
 	}), $(".mobile-toggle-menu").on("click", function() {
-		$(".wrapper").addClass("toggled")
+		$(".wrapper").toggleClass("toggled")
 	}), $(".toggle-icon").click(function() {
 		$(".wrapper").hasClass("toggled") ? ($(".wrapper").removeClass("toggled"), $(".sidebar-wrapper").unbind("hover")) : ($(".wrapper").addClass("toggled"), $(".sidebar-wrapper").hover(function() {
 			$(".wrapper").addClass("sidebar-hovered")

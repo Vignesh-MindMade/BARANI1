@@ -1,0 +1,527 @@
+[10-Jan-2026 06:42:54 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:42:58 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:00 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:44 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:46 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:47 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:54 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:43:55 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:02 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:30 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:31 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:37 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:38 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:39 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:40 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:42 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:43 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:44 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:46 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:46 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:46 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:47 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:47 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[10-Jan-2026 06:44:49 UTC] PHP Fatal error:  During inheritance of ArrayAccess: Uncaught ErrorException: Return type of Illuminate\Support\Collection::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php:1411
+Stack trace:
+#0 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(11): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(576): include('/home/sigma1/pu...')
+#2 /home/sigma1/public_html/barani/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}()
+#3 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/helpers.php(15): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(89): collect()
+#5 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/PackageManifest.php(78): Illuminate\Foundation\PackageManifest->config()
+#6 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterFacades.php(26): Illuminate\Foundation\PackageManifest->aliases()
+#7 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(237): Illuminate\Foundation\Bootstrap\RegisterFacades->bootstrap()
+#8 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(152): Illuminate\Foundation\Application->bootstrapWith()
+#9 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\Foundation\Http\Kernel->bootstrap()
+#10 /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(110): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter()
+#11 /home/sigma1/public_html/barani/public/index.php(52): Illuminate\Foundation\Http\Kernel->handle()
+#12 /home/sigma1/public_html/barani/server.php(21): require_once('/home/sigma1/pu...')
+#13 {main} in /home/sigma1/public_html/barani/vendor/laravel/framework/src/Illuminate/Collections/Collection.php on line 11
+[17-Mar-2026 11:13:34 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:13:36 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:13:38 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:13:41 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:13:42 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:13:45 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:14:03 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:14:30 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:15:05 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:15:07 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739
+[17-Mar-2026 11:15:10 UTC] PHP Fatal error:  Uncaught ErrorException: Symfony\Component\HttpFoundation\Response::setExpires(): Implicitly marking parameter $date as nullable is deprecated, the explicit nullable type must be used instead in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php:739
+Stack trace:
+#0 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError()
+#1 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(576): include()
+#2 /home/sigma1/public_html/barani_dev/vendor/composer/ClassLoader.php(427): {closure:Composer\Autoload\ClassLoader::initializeIncludeClosure():575}()
+#3 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(486): Composer\Autoload\ClassLoader->loadClass()
+#4 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(466): Illuminate\Foundation\Exceptions\Handler->convertExceptionToResponse()
+#5 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(352): Illuminate\Foundation\Exceptions\Handler->prepareResponse()
+#6 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(119): Illuminate\Foundation\Exceptions\Handler->render()
+#7 /home/sigma1/public_html/barani_dev/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(96): Illuminate\Foundation\Bootstrap\HandleExceptions->renderHttpResponse()
+#8 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleException()
+#9 {main}
+  thrown in /home/sigma1/public_html/barani_dev/vendor/symfony/http-foundation/Response.php on line 739

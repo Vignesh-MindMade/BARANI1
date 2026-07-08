@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="BE_Civil_Engineering" data-name="BE Civil Engineering" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <path d="M206.75,206.75H49.25V49.25h157.5v157.5ZM56.75,199.25h142.5V56.75H56.75v142.5Z"/>
+  <path d="M188.42,188.42h-120.83v-120.83h120.83v120.83h0ZM75.08,180.92h105.83v-105.83h-105.83v105.83Z"/>
+  <g>
+    <rect x="67.58" y="28" width="7.5" height="16.67"/>
+    <rect x="83.77" y="28" width="7.5" height="16.67"/>
+    <rect x="99.96" y="28" width="7.5" height="16.67"/>
+    <rect x="116.15" y="28" width="7.5" height="16.67"/>
+    <rect x="132.35" y="28" width="7.5" height="16.67"/>
+    <rect x="148.54" y="28" width="7.5" height="16.67"/>
+    <rect x="164.73" y="28" width="7.5" height="16.67"/>
+    <rect x="180.92" y="28" width="7.5" height="16.67"/>
+  </g>
+  <g>
+    <rect x="67.58" y="211.33" width="7.5" height="16.67"/>
+    <rect x="83.77" y="211.33" width="7.5" height="16.67"/>
+    <rect x="99.96" y="211.33" width="7.5" height="16.67"/>
+    <rect x="116.15" y="211.33" width="7.5" height="16.67"/>
+    <rect x="132.35" y="211.33" width="7.5" height="16.67"/>
+    <rect x="148.54" y="211.33" width="7.5" height="16.67"/>
+    <rect x="164.73" y="211.33" width="7.5" height="16.67"/>
+    <rect x="180.92" y="211.33" width="7.5" height="16.67"/>
+  </g>
+  <g>
+    <rect x="211.33" y="67.58" width="16.67" height="7.5"/>
+    <rect x="211.33" y="83.78" width="16.67" height="7.5"/>
+    <rect x="211.33" y="99.97" width="16.67" height="7.5"/>
+    <rect x="211.33" y="116.15" width="16.67" height="7.5"/>
+    <rect x="211.33" y="132.35" width="16.67" height="7.5"/>
+    <rect x="211.33" y="148.54" width="16.67" height="7.5"/>
+    <rect x="211.33" y="164.73" width="16.67" height="7.5"/>
+    <rect x="211.33" y="180.92" width="16.67" height="7.5"/>
+  </g>
+  <g>
+    <rect x="28" y="67.58" width="16.67" height="7.5"/>
+    <rect x="28" y="83.78" width="16.67" height="7.5"/>
+    <rect x="28" y="99.97" width="16.67" height="7.5"/>
+    <rect x="28" y="116.15" width="16.67" height="7.5"/>
+    <rect x="28" y="132.35" width="16.67" height="7.5"/>
+    <rect x="28" y="148.54" width="16.67" height="7.5"/>
+    <rect x="28" y="164.73" width="16.67" height="7.5"/>
+    <rect x="28" y="180.92" width="16.67" height="7.5"/>
+  </g>
+  <g>
+    <rect x="101.75" y="101.75" width="7.5" height="7.5"/>
+    <rect x="116.75" y="101.75" width="7.5" height="7.5"/>
+    <rect x="131.75" y="101.75" width="7.5" height="7.5"/>
+    <rect x="146.75" y="101.75" width="7.5" height="7.5"/>
+    <rect x="101.75" y="116.75" width="7.5" height="7.5"/>
+    <rect x="116.75" y="116.75" width="7.5" height="7.5"/>
+    <rect x="131.75" y="116.75" width="7.5" height="7.5"/>
+    <rect x="146.75" y="116.75" width="7.5" height="7.5"/>
+    <rect x="101.75" y="131.75" width="7.5" height="7.5"/>
+    <rect x="116.75" y="131.75" width="7.5" height="7.5"/>
+    <rect x="131.75" y="131.75" width="7.5" height="7.5"/>
+    <rect x="146.75" y="131.75" width="7.5" height="7.5"/>
+    <rect x="101.75" y="146.75" width="7.5" height="7.5"/>
+    <rect x="116.75" y="146.75" width="7.5" height="7.5"/>
+    <rect x="131.75" y="146.75" width="7.5" height="7.5"/>
+    <rect x="146.75" y="146.75" width="7.5" height="7.5"/>
+  </g>
+</svg>

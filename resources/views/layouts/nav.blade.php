@@ -1,39 +1,84 @@
+<style>
+    .sidebar-wrapper {
+        color: #ffffff;
+        background-color: #1e3556;
+    }
+    .sidebar-wrapper a {
+        color: white;
+    }
+    .sidebar-wrapper .menu-title {
+        color: white;
+    }
+    .sidebar-wrapper .parent-icon i {
+        color: white;
+    }
+    .sidebar-wrapper .metismenu ul a i {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 0.95rem;
+        margin-right: 6px;
+    }
+</style>
+
 <div class="sidebar-wrapper" data-simplebar="true">
     <div class="sidebar-header">
-        <div>
-            <img src="assets/images/logo.png" class="logo-icon" alt="logo icon" style="width:143px">
+        <div class="ml-1r">
+            <img src="{{ asset('assets/frontend/images/logo/logo-light.png') }}" class="logo-icon" alt="logo icon">
         </div>
-        <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i></div>
     </div>
-    <!--navigation-->
-    <ul class="metismenu" id="menu">
+    <ul class="metismenu mt-15 primary-menu" id="menu">
+
         <li>
-            <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class='bx bx-home-circle'></i></div>
-                <div class="menu-title">Dashboard</div>
+            <a href="{{ route('dashboard') }}">
+                <div class="d-c-c-r">
+                    <div class="parent-icon"><i class='bx bxs-dashboard'></i></div>
+                    <div class="menu-title">Dashboard</div>
+                </div>
             </a>
-            <ul>
-                <li><a href="{{ url('index') }}"><i class="bx bx-right-arrow-alt"></i>eCommerce</a></li>
-                <li><a href="{{ url('dashboard-alternate') }}"><i class="bx bx-right-arrow-alt"></i>Analytics</a></li>
-            </ul>
         </li>
 
         <li>
             <a href="javascript:;" class="has-arrow">
-                <div class="parent-icon"><i class="bx bx-category"></i></div>
-                <div class="menu-title">Home Page Settings</div>
+                <div class="d-c-c-r">
+                    <div class="parent-icon"><i class='bx bx-layout'></i></div>
+                    <div class="menu-title">Topbar Settings</div>
+                </div>
             </a>
             <ul>
-                <li><a href="{{ route('topbar.index') }}"><i class="bx bx-right-arrow-alt"></i>Topbar</a></li>
-                <li><a href="{{ route('menus.index') }}"><i class="bx bx-right-arrow-alt"></i>MainMenu</a></li>
-                <li><a href="{{ route('menus.submenu') }}"><i class="bx bx-right-arrow-alt"></i>Submenu</a></li>
-                <li><a href="{{ route('banner.index') }}"><i class="bx bx-right-arrow-alt"></i>Banners</a></li>
-                <li><a href="{{ route('newsevents.index') }}"><i class="bx bx-right-arrow-alt"></i>News & Events</a></li>
-                <li><a href="{{ route('latestvideos.index') }}"><i class="bx bx-right-arrow-alt"></i>Our Latest Videos</a></li>
-                <li><a href="{{ route('testimonial.index') }}"><i class="bx bx-right-arrow-alt"></i>Testimonials</a></li>
-                <li><a href="{{ route('banner.bgbanner') }}"><i class="bx bx-right-arrow-alt"></i>BackGround Banner</a></li>
-                <li><a href="{{ route('message.index') }}"><i class="bx bx-right-arrow-alt"></i>Principal Message</a></li>
+                <li><a href="{{ route('topbar.index') }}"><i class='bx bx-download'></i>Download Page</a></li>
+                <li><a href="{{ route('career.index') }}"><i class='bx bx-briefcase'></i>Career Page</a></li>
+                <li><a href="{{ route('supplier_space.index') }}"><i class='bx bx-store'></i>Supplier Page</a></li>
             </ul>
         </li>
+
+        <li>
+            <a href="{{ route('subpage.view') }}">
+                <div class="d-c-c-r">
+                    <div class="parent-icon"><i class='bx bxs-file-blank'></i></div>
+                    <div class="menu-title">Pages</div>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="{{ route('product_catagory.index') }}">
+                <div class="d-c-c-r">
+                    <div class="parent-icon"><i class='bx bxs-box'></i></div>
+                    <div class="menu-title">Product</div>
+                </div>
+            </a>
+        </li>
+
+        <li>
+            <a href="javascript:;" class="has-arrow">
+                <div class="d-c-c-r">
+                    <div class="parent-icon"><i class='bx bxs-wrench'></i></div>
+                    <div class="menu-title">General Settings</div>
+                </div>
+            </a>
+            <ul>
+                <li><a href="{{ route('pages.footer') }}"><i class='bx bx-layout'></i>Footer</a></li>
+            </ul>
+        </li>
+
     </ul>
 </div>

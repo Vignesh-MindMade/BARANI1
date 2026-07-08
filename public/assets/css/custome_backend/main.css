@@ -1,0 +1,109 @@
+
+    .form-section {
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-header {
+        border-bottom: 1px solid #eee;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        color: #495057;
+        margin-bottom: 8px;
+    }
+
+    .image-upload-container {
+        border: 2px dashed #dee2e6;
+        border-radius: 6px;
+        padding: 20px;
+        text-align: center;
+        background-color: #f8fafc;
+        transition: all 0.3s ease;
+    }
+
+    .image-upload-container:hover {
+        border-color: #adb5bd;
+    }
+
+    .upload-icon {
+        font-size: 24px;
+        color: #6c757d;
+        margin-bottom: 10px;
+    }
+
+    .upload-text {
+        color: #6c757d;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .img-preview {
+        border-radius: 6px;
+        border: 1px solid #dee2e6;
+        padding: 5px;
+        background: white;
+    }
+
+    .section-divider {
+        height: 1px;
+        background: linear-gradient(to right, transparent, #dee2e6, transparent);
+        margin: 25px 0;
+    }
+
+    .psg-p-btn {
+        background-color: #4e73df;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+    }
+
+    .psg-p-btn:hover {
+        background-color: #3a5ec0;
+        transform: translateY(-2px);
+    }
+
+    .psg-p-btn.red-bg {
+        background-color: #e74a3b;
+    }
+
+    .card {
+        border-radius: 10px;
+        overflow: hidden;
+        border: none;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-header {
+        background-color: #f8f9fa;
+        border-bottom: 1px solid #eee;
+        padding: 15px 20px;
+    }
+
+    .action-buttons .btn {
+        margin-right: 5px;
+        border-radius: 4px;
+        font-weight: 500;
+    }
+
+    .modal-content {
+        border-radius: 10px;
+    }
+
+    textarea.form-control {
+        min-height: 120px;
+    }
+
+    .table th {
+        background-color: #4e73df;
+        color: white;
+    }

@@ -11,5 +11,10 @@ class Menu extends Model
 
     protected $table = 'menus';
     protected $fillable = ['name', 'image', 'sort_id'];
+    
+      public function submenus()
+    {
+        return $this->hasMany(Submenu::class);
+    }
 
 }

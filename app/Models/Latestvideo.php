@@ -11,5 +11,6 @@ class Latestvideo extends Model
 
 
     protected $table = 'videos';
-    protected $fillable = ['title','link','sort_id'];
+protected $fillable = ['title','description','sort_id','image2','link'];
+
 }
