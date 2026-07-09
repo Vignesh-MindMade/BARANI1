@@ -30,6 +30,9 @@ use App\Http\Controllers\CapabilitiesPageController;
 use App\Http\Controllers\ProductarchiveController;
 use App\Http\Controllers\BrochureLeadController;
 
+use App\Http\Controllers\Frontend\BlogController;
+use App\Http\Controllers\BlogController as BackendBlogController;
+
 #Cache Clear:
 Route::get('/clear-cache', function () {
     Artisan::call('optimize:clear');
@@ -40,6 +43,13 @@ Route::get('/clear-cache', function () {
 Route::get('/',function(){
     return view('frontend.home.index');
 });
+
+// Frontend Routes
+Route::get('/blogs', [BlogController::class, 'index'])->name('blogs.index');
+Route::get('/blogs/{blog}', [BlogController::class, 'show'])->name('blogs.show');
+Route::get('/blogs/{blog}/pdf', [BlogController::class, 'viewPdf'])->name('blogs.pdf.view');
+Route::get('/blogs/{blog}/pdf/download', [BlogController::class, 'downloadPdf'])->name('blogs.pdf.download');
+
 
 #Product Search Routes
 Route::get('/search', [ProductController::class, 'search'])->name('product.search');
@@ -91,6 +101,16 @@ Route::get('/jsr', [JSRController::class, 'frontendIndex'])->name('jsr.frontend.
 #BACKEND ROUTES
 Route::middleware(['auth'])->group(function () {
 
+    // Blog CRUD
+    Route::get('/blogs-admin', [BackendBlogController::class, 'index'])->name('blogs-admin.index');
+    Route::get('/blogs-admin/create', [BackendBlogController::class, 'create'])->name('blogs-admin.create');
+    Route::post('/blogs-admin', [BackendBlogController::class, 'store'])->name('blogs-admin.store');
+    Route::get('/blogs-admin/{blog}/edit', [BackendBlogController::class, 'edit'])->name('blogs-admin.edit');
+    Route::put('/blogs-admin/{blog}', [BackendBlogController::class, 'update'])->name('blogs-admin.update');
+    Route::delete('/blogs-admin/{blog}', [BackendBlogController::class, 'destroy'])->name('blogs-admin.destroy');
+    
+    // AJAX reorder
+    Route::post('/blogs-admin/reorder', [BackendBlogController::class, 'reorderImages'])->name('blogs-admin.reorder-images');
     Route::get('admin', [CustomAuthController::class, 'admin']);
     Route::get('dashboard', [CustomAuthController::class, 'dashboard'])->name('dashboard');
 

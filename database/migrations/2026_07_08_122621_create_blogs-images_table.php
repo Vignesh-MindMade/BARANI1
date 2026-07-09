@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductarchivesTable extends Migration
+class CreateBlogsImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateProductarchivesTable extends Migration
      */
     public function up()
     {
-        Schema::create('productarchives', function (Blueprint $table) {
+        Schema::create('blogs-images', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->longText('description');
+            $table->foreignId('blog_id')->constrained('blogs')->onDelete('cascade');
+            $table->string('image_path');
+            $table->string('caption')->nullable();
+            $table->integer('sort_order')->default(0);
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ class CreateProductarchivesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('productarchives');
+        Schema::dropIfExists('blogs-images');
     }
 }
