@@ -1,13 +1,13 @@
-@extends("layouts.app")
 
-@section("style")
+
+<?php $__env->startSection("style"); ?>
 <!-- Bootstrap CSS -->
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 <!-- Font Awesome for Icons -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- SweetAlert2 CSS -->
 <link rel="stylesheet" href="https://jsdelivr.net">
-{{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/sweetalert2.min.css" /> --}}
+
 <!-- Custom Styles -->
 <style>
     body {
@@ -169,9 +169,9 @@
         }
     }
 </style>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section("wrapper")
+<?php $__env->startSection("wrapper"); ?>
 <div class="page-wrapper">
     <div class="page-content">
         <!-- Breadcrumb Navigation -->
@@ -200,8 +200,8 @@
                                 </h2>
                                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <form action="{{ route('footercontact.store') }}" method="POST" enctype="multipart/form-data">
-                                            @csrf
+                                        <form action="<?php echo e(route('footercontact.store')); ?>" method="POST" enctype="multipart/form-data">
+                                            <?php echo csrf_field(); ?>
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col">
@@ -240,25 +240,25 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($contacts ?? '' as $key => $contact)
+                                                <?php $__currentLoopData = $contacts ?? ''; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $contact): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                 <tr>
-                                                    <td>{{ $key + 1 }}</td>
-                                                    <td id="address-{{ $contact->id }}">{{ $contact->address }}</td>
-                                                    <td id="mail-{{ $contact->id }}">{{ $contact->mail }}</td>
-                                                    <td id="contact_no_1-{{ $contact->id }}">{{ $contact->contact_no_1 }}</td>
-                                                    <td id="contact_no_2-{{ $contact->id }}">{{ $contact->contact_no_2 }}</td>
+                                                    <td><?php echo e($key + 1); ?></td>
+                                                    <td id="address-<?php echo e($contact->id); ?>"><?php echo e($contact->address); ?></td>
+                                                    <td id="mail-<?php echo e($contact->id); ?>"><?php echo e($contact->mail); ?></td>
+                                                    <td id="contact_no_1-<?php echo e($contact->id); ?>"><?php echo e($contact->contact_no_1); ?></td>
+                                                    <td id="contact_no_2-<?php echo e($contact->id); ?>"><?php echo e($contact->contact_no_2); ?></td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editContactRow('{{ $contact->id }}')"><i class="fas fa-edit mr-1"></i> Edit</button>
-                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="saveContact-{{ $contact->id }}" onclick="saveContactRow('{{ $contact->id }}')"><i class="fas fa-save mr-1"></i> Save</button>
+                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editContactRow('<?php echo e($contact->id); ?>')"><i class="fas fa-edit mr-1"></i> Edit</button>
+                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="saveContact-<?php echo e($contact->id); ?>" onclick="saveContactRow('<?php echo e($contact->id); ?>')"><i class="fas fa-save mr-1"></i> Save</button>
                                                     </td>
                                                     <td>
-                                                        <form id="deleteForm" action="{{ route('footercontact.destroy', $contact->id) }}" method="POST" style="display: inline;">
-                                                            @csrf @method('DELETE')
-                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmcontactDelete('{{ $contact->id }}')"><i class="fas fa-trash mr-1"></i> Delete</button>
+                                                        <form id="deleteForm" action="<?php echo e(route('footercontact.destroy', $contact->id)); ?>" method="POST" style="display: inline;">
+                                                            <?php echo csrf_field(); ?> <?php echo method_field('DELETE'); ?>
+                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmcontactDelete('<?php echo e($contact->id); ?>')"><i class="fas fa-trash mr-1"></i> Delete</button>
                                                         </form>
                                                     </td>
                                                 </tr>
-                                                @endforeach
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -267,14 +267,14 @@
 
                             <!-- Footer Text Section -->
                             <hr>
-                            <form id="psg-iaq-form" action="{{ route('footertext.store') }}" method="POST">
-                                @csrf
-                                @foreach($texts as $text)
+                            <form id="psg-iaq-form" action="<?php echo e(route('footertext.store')); ?>" method="POST">
+                                <?php echo csrf_field(); ?>
+                                <?php $__currentLoopData = $texts; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $text): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                 <div class="mb-3">
                                     <label for="text" class="form-label">Footer Text</label>
-                                    <textarea class="form-control" id="text" name="text" aria-label="Description" style="width: 100%; height: 150px;">{{ old('text', $text->text ?? '') }}</textarea>
+                                    <textarea class="form-control" id="text" name="text" aria-label="Description" style="width: 100%; height: 150px;"><?php echo e(old('text', $text->text ?? '')); ?></textarea>
                                 </div>
-                                @endforeach
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </form>
 
@@ -287,8 +287,8 @@
                                 </h2>
                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <form action="{{ route('footer.links') }}" method="POST" enctype="multipart/form-data">
-                                            @csrf
+                                        <form action="<?php echo e(route('footer.links')); ?>" method="POST" enctype="multipart/form-data">
+                                            <?php echo csrf_field(); ?>
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col">
@@ -324,28 +324,28 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($links ?? '' as $key => $link)
+                                                <?php $__currentLoopData = $links ?? ''; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $link): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                 <tr>
-                                                    <td>{{ $key+1 }}</td>
-                                                    <td id="pagename-{{ $link->id }}">{{ $link->pagename }}</td>
-                                                    <td id="link-{{ $link->id }}">{{ $link->link }}</td>
-                                                    <td id="pdf-{{ $link->id }}">
-                                                        @if($link->pdf)
-                                                        <a href="{{ asset('public/pdfs/' . $link->pdf) }}" target="_blank">View PDF</a>
-                                                        @else No PDF @endif
+                                                    <td><?php echo e($key+1); ?></td>
+                                                    <td id="pagename-<?php echo e($link->id); ?>"><?php echo e($link->pagename); ?></td>
+                                                    <td id="link-<?php echo e($link->id); ?>"><?php echo e($link->link); ?></td>
+                                                    <td id="pdf-<?php echo e($link->id); ?>">
+                                                        <?php if($link->pdf): ?>
+                                                        <a href="<?php echo e(asset('public/pdfs/' . $link->pdf)); ?>" target="_blank">View PDF</a>
+                                                        <?php else: ?> No PDF <?php endif; ?>
                                                     </td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editRow('{{ $link->id }}')"><i class="fas fa-edit mr-1"></i> Edit</button>
-                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="save-{{ $link->id }}" onclick="saveRow('{{ $link->id }}')"><i class="fas fa-save mr-1"></i> Save</button>
+                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editRow('<?php echo e($link->id); ?>')"><i class="fas fa-edit mr-1"></i> Edit</button>
+                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="save-<?php echo e($link->id); ?>" onclick="saveRow('<?php echo e($link->id); ?>')"><i class="fas fa-save mr-1"></i> Save</button>
                                                     </td>
                                                     <td>
-                                                        <form id="deleteForm-{{ $link->id }}" action="{{ route('links.destroy', $link->id) }}" method="POST" style="display: inline;">
-                                                            @csrf @method('DELETE')
-                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmDelete('{{ $link->id }}')"><i class="fas fa-trash mr-1"></i> Delete</button>
+                                                        <form id="deleteForm-<?php echo e($link->id); ?>" action="<?php echo e(route('links.destroy', $link->id)); ?>" method="POST" style="display: inline;">
+                                                            <?php echo csrf_field(); ?> <?php echo method_field('DELETE'); ?>
+                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmDelete('<?php echo e($link->id); ?>')"><i class="fas fa-trash mr-1"></i> Delete</button>
                                                         </form>
                                                     </td>
                                                 </tr>
-                                                @endforeach
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -361,8 +361,8 @@
                                 </h2>
                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <form action="{{ route('footerdownload.store') }}" method="POST" enctype="multipart/form-data">
-                                            @csrf
+                                        <form action="<?php echo e(route('footerdownload.store')); ?>" method="POST" enctype="multipart/form-data">
+                                            <?php echo csrf_field(); ?>
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col">
@@ -395,28 +395,28 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach($downloads ?? '' as $key => $download)
-                                                <tr id="row-{{ $download->id }}">
-                                                    <td>{{ $key+1 }}</td>
-                                                    <td id="pdf_name-{{ $download->id }}">{{ $download->pdf_name }}</td>
-                                                    <td id="link_name-{{ $download->id }}">{{ $download->link_name }}</td>
-                                                    <td id="pdf-{{ $download->id }}">
-                                                        @if($download->pdf)
-                                                        <a href="{{ asset('pdfs/' . $download->pdf) }}" target="_blank">View PDF</a>
-                                                        @else No PDF available @endif
+                                                <?php $__currentLoopData = $downloads ?? ''; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key => $download): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                <tr id="row-<?php echo e($download->id); ?>">
+                                                    <td><?php echo e($key+1); ?></td>
+                                                    <td id="pdf_name-<?php echo e($download->id); ?>"><?php echo e($download->pdf_name); ?></td>
+                                                    <td id="link_name-<?php echo e($download->id); ?>"><?php echo e($download->link_name); ?></td>
+                                                    <td id="pdf-<?php echo e($download->id); ?>">
+                                                        <?php if($download->pdf): ?>
+                                                        <a href="<?php echo e(asset('pdfs/' . $download->pdf)); ?>" target="_blank">View PDF</a>
+                                                        <?php else: ?> No PDF available <?php endif; ?>
                                                     </td>
                                                     <td>
-                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editdownloadRow('{{ $download->id }}')"><i class="fas fa-edit mr-1"></i> Edit</button>
-                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="savedownload-{{ $download->id }}" onclick="savedownloadRow('{{ $download->id }}')"><i class="fas fa-save mr-1"></i> Save</button>
+                                                        <button type="button" class="btn btn-sm btn-primary" onclick="editdownloadRow('<?php echo e($download->id); ?>')"><i class="fas fa-edit mr-1"></i> Edit</button>
+                                                        <button type="button" class="btn btn-sm btn-success" style="display: none;" id="savedownload-<?php echo e($download->id); ?>" onclick="savedownloadRow('<?php echo e($download->id); ?>')"><i class="fas fa-save mr-1"></i> Save</button>
                                                     </td>
                                                     <td>
-                                                        <form id="deletedownloadForm" action="{{ route('footerdownload.destroy', $download->id) }}" method="POST" style="display: inline;">
-                                                            @csrf @method('DELETE')
-                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmdownloadDelete('{{ $download->id }}')"><i class="fas fa-trash mr-1"></i> Delete</button>
+                                                        <form id="deletedownloadForm" action="<?php echo e(route('footerdownload.destroy', $download->id)); ?>" method="POST" style="display: inline;">
+                                                            <?php echo csrf_field(); ?> <?php echo method_field('DELETE'); ?>
+                                                            <button type="button" class="btn btn-sm btn-danger" onclick="confirmdownloadDelete('<?php echo e($download->id); ?>')"><i class="fas fa-trash mr-1"></i> Delete</button>
                                                         </form>
                                                     </td>
                                                 </tr>
-                                                @endforeach
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -432,44 +432,44 @@
                                 </h2>
                                 <div id="flush-collapsefour" class="accordion-collapse collapse" aria-labelledby="flush-headingfour" data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body">
-                                        <form action="{{ route('socials.store') }}" method="POST" enctype="multipart/form-data">
-                                            @csrf
-                                            @foreach($socials as $social)
+                                        <form action="<?php echo e(route('socials.store')); ?>" method="POST" enctype="multipart/form-data">
+                                            <?php echo csrf_field(); ?>
+                                            <?php $__currentLoopData = $socials; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $social): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <div class="container">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i class="fab fa-facebook-f"></i></span>
-                                                            <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Add Facebook URL" value="{{ old('facebook', $social->facebook ?? '') }}" />
+                                                            <input type="text" class="form-control" id="facebook" name="facebook" placeholder="Add Facebook URL" value="<?php echo e(old('facebook', $social->facebook ?? '')); ?>" />
                                                         </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i class="fab fa-linkedin-in"></i></span>
-                                                            <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Add LinkedIn URL" value="{{ old('linkedin', $social->linkedin ?? '') }}" />
+                                                            <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="Add LinkedIn URL" value="<?php echo e(old('linkedin', $social->linkedin ?? '')); ?>" />
                                                         </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i class="fab fa-instagram"></i></span>
-                                                            <input type="text" class="form-control" id="instagram" name="instagram" placeholder="Add Instagram URL" value="{{ old('instagram', $social->instagram ?? '') }}" />
+                                                            <input type="text" class="form-control" id="instagram" name="instagram" placeholder="Add Instagram URL" value="<?php echo e(old('instagram', $social->instagram ?? '')); ?>" />
                                                         </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i class="fab fa-twitter"></i></span>
-                                                            <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Add Twitter URL" value="{{ old('twitter', $social->twitter ?? '') }}" />
+                                                            <input type="text" class="form-control" id="twitter" name="twitter" placeholder="Add Twitter URL" value="<?php echo e(old('twitter', $social->twitter ?? '')); ?>" />
                                                         </div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="input-group">
                                                             <span class="input-group-text"><i class="fab fa-youtube"></i></span>
-                                                            <input type="text" class="form-control" id="youtube" name="youtube" placeholder="Add YouTube URL" value="{{ old('youtube', $social->youtube ?? '') }}" />
+                                                            <input type="text" class="form-control" id="youtube" name="youtube" placeholder="Add YouTube URL" value="<?php echo e(old('youtube', $social->youtube ?? '')); ?>" />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            @endforeach
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                             <br />
                                             <button type="submit" class="btn btn-primary">Submit</button>
                                         </form>
@@ -485,11 +485,11 @@
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section("script")
+<?php $__env->startSection("script"); ?>
 <!-- SweetAlert2 JS -->
-{{-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/sweetalert2.all.min.js"></script> --}}
+
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <!-- Contact Section Scripts -->
@@ -509,7 +509,7 @@
         var contact_no_1 = document.getElementById("input-contact_no_1-" + id).value;
         var contact_no_2 = document.getElementById("input-contact_no_2-" + id).value;
 
-        var csrfToken = "{{ csrf_token() }}";
+        var csrfToken = "<?php echo e(csrf_token()); ?>";
 
         // Update the table cells to reflect the new values
         document.getElementById("address-" + id).innerText = address;
@@ -523,7 +523,7 @@
 
         // Send an AJAX request to update the contact
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "{{ route('footercontact.update', '') }}/" + id, true);
+        xhr.open("POST", "<?php echo e(route('footercontact.update', '')); ?>/" + id, true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.setRequestHeader("X-CSRF-TOKEN", csrfToken);
 
@@ -567,7 +567,7 @@
             confirmButtonText: "Delete",
         }).then((result) => {
             if (result.isConfirmed) {
-                document.getElementById("deleteForm").action = "{{ route('footercontact.destroy', ':id') }}".replace(":id", contactID);
+                document.getElementById("deleteForm").action = "<?php echo e(route('footercontact.destroy', ':id')); ?>".replace(":id", contactID);
                 document.getElementById("deleteForm").submit();
             }
         });
@@ -596,10 +596,10 @@
         if (pdfFile) {
             formData.append("pdf", pdfFile);
         }
-        formData.append("_token", "{{ csrf_token() }}");
+        formData.append("_token", "<?php echo e(csrf_token()); ?>");
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "{{ route('links.update', '') }}/" + id, true);
+        xhr.open("POST", "<?php echo e(route('links.update', '')); ?>/" + id, true);
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -665,10 +665,10 @@
         formData.append("pdf_name", pdfName);
         formData.append("link_name", pdfLinkCell);
         formData.append("pdf", pdfFile);
-        formData.append("_token", "{{ csrf_token() }}");
+        formData.append("_token", "<?php echo e(csrf_token()); ?>");
 
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "{{ route('footerdownload.update', '') }}/" + downloadid, true);
+        xhr.open("POST", "<?php echo e(route('footerdownload.update', '')); ?>/" + downloadid, true);
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
@@ -716,7 +716,7 @@
             confirmButtonText: "Delete",
         }).then((result) => {
             if (result.isConfirmed) {
-                document.getElementById("deletedownloadForm").action = "{{ route('footerdownload.destroy', ':id') }}".replace(":id", pdfid);
+                document.getElementById("deletedownloadForm").action = "<?php echo e(route('footerdownload.destroy', ':id')); ?>".replace(":id", pdfid);
                 document.getElementById("deletedownloadForm").submit();
             }
         });
@@ -724,17 +724,18 @@
 </script>
 
 <!-- Success Notification -->
-@if(session('success'))
+<?php if(session('success')): ?>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         Swal.fire({
             icon: "success",
             title: "Success!",
-            text: "{{ session('success') }}",
+            text: "<?php echo e(session('success')); ?>",
             showConfirmButton: false,
             timer: 2000,
         });
     });
 </script>
-@endif
-@endsection
+<?php endif; ?>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make("layouts.app", \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\herd\barani_live\resources\views/pages/footer.blade.php ENDPATH**/ ?>
