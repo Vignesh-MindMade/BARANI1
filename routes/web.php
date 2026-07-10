@@ -29,6 +29,8 @@ use App\Http\Controllers\CapabilitiesMenuController;
 use App\Http\Controllers\CapabilitiesPageController;
 use App\Http\Controllers\ProductarchiveController;
 use App\Http\Controllers\BrochureLeadController;
+use App\Http\Controllers\BlogPageSettingsController;
+use App\Http\Controllers\BlogsController;
 
 #Cache Clear:
 Route::get('/clear-cache', function () {
@@ -88,8 +90,23 @@ Route::get('/capabilities/{slug}', [CapabilitiesPageController::class, 'show'])
     ->name('capabilities.page');
 Route::get('/jsr', [JSRController::class, 'frontendIndex'])->name('jsr.frontend.index');
 
+
+Route::get('/blog', [BlogPageSettingsController::class, 'frontendIndex'])->name('blog.frontend.index');
 #BACKEND ROUTES
 Route::middleware(['auth'])->group(function () {
+
+    Route::get('/blog-settings',[BlogPageSettingsController::class,'index'])->name('blog-settings');
+    Route::put('/blog-settings',[BlogPageSettingsController::class,'update'])->name('blog.settings.update');
+    Route::delete('/blog-settings/banner-image',[BlogPageSettingsController::class,'destroyBannerImage'])->name('blog.settings.banner.destroy');
+
+    Route::get('/blogs',[BlogsController::class,'index'])->name('blogs.index');
+    Route::get('/blogs/create',[BlogsController::class, 'create'])->name('blogs.create');
+    Route::post('/blogs',[BlogsController::class, 'store'])->name('blogs.store');
+    Route::get('/blogs/{id}/edit',[BlogsController::class, 'edit'])->name('blogs.edit');
+    Route::put('/blogs/{id}',[BlogsController::class, 'update'])->name('blogs.update');
+    Route::delete('/blogs/{id}',[BlogsController::class, 'destroy'])->name('blogs.destroy');
+
+
 
     Route::get('admin', [CustomAuthController::class, 'admin']);
     Route::get('dashboard', [CustomAuthController::class, 'dashboard'])->name('dashboard');

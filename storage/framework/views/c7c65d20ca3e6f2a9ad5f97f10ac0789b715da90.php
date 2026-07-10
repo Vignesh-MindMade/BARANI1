@@ -353,9 +353,30 @@
                                             </a>
                                         </td>
                                     </tr>
-                                    <tr>
+
+                                    
+                                      <tr>
                                         <td class="text-center">
                                             <span class="serial-number">8</span>
+                                        </td>
+                                        <td>
+                                            <div class="page-name">
+                                                <span class="page-icon">
+                                                    <i class="fas fa-cogs"></i>
+                                                </span>
+                                                <span>Blogs</span>
+                                            </div>
+                                        </td>
+                                        <td class="text-center">
+                                            <a href="<?php echo e(route('blog-settings')); ?>" class="view-btn">
+                                                <i class="fas fa-edit"></i> Edit
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td class="text-center">
+                                            <span class="serial-number">9</span>
                                         </td>
                                         <td>
                                             <div class="page-name">

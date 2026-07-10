@@ -426,5 +426,56 @@ document.getElementById('pdfModal').addEventListener('click', e => {
 
 <!--model popup-->
 <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.js"></script>
+<script>
+Fancybox.bind("[data-fancybox]", {
+
+    Toolbar: {
+        display: {
+            left: [],
+            middle: [],
+            right: ["close"]
+        }
+    },
+
+    Images: {
+        zoom: false
+    },
+
+    Html: {
+        video: {
+            autoplay: true
+        }
+    },
+
+    Slideshow: false,
+    Fullscreen: false
+});
+</script>
+<script>
+    // Content Type Card Selection
+document.querySelectorAll('.type-card').forEach(card => {
+    card.addEventListener('click', function() {
+        // Remove active from all
+        document.querySelectorAll('.type-card .card').forEach(c => {
+            c.classList.remove('border-primary');
+        });
+        
+        // Add active to selected
+        this.querySelector('.card').classList.add('border-primary');
+        
+        // Check the hidden radio
+        const radio = this.querySelector('input[type="radio"]');
+        radio.checked = true;
+        
+        // Trigger field toggle (if you have JS for showing/hiding fields)
+        if (typeof toggleFields === 'function') {
+            toggleFields();
+        }
+    });
+});
+</script>
+
+
 
 
